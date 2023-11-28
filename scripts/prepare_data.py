@@ -6,6 +6,7 @@ FILE_WINE = "data/wine.zip"
 import requests
 import os
 import hashlib
+import zipfile
 
 ##import zipfile
 
@@ -36,3 +37,11 @@ if HASH_WINE != sha256hash01:
     print("wine.zip hash does not match expected hash, not matching with original file") 
 else:
     print("wine.zip hash matches expected hash")
+
+# unzip dataset
+with zipfile.ZipFile(FILE_WINE, mode="r") as archive:
+    try:
+        archive.extractall(path="data/")
+        print("Unzip of wine.zip complete")
+    except:
+        print("Unzip failed. Check dataset downloaded correctly")
