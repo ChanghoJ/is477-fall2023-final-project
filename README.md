@@ -9,7 +9,7 @@ Public repository for IS477 Fall 2023 final project
 
 
 ## Contributions
-
+112
 ## Analysis
 1. From the applying the train dataset, Logistic Regression showed the best accuracy score: 1. Therefore, Logistic Regression is selected for the final application for classification.
 2. Then, the selected model, Logistic Regression is fitted with test X and y for the final evaluation of the model. To evaluate the model with slightly more detailed, confusion matrix with metrics like accuracy, precision, and recall used. Logistic Regression showed all correct, 100% accuracy, precision, and recall with no negatives or error in confusion matrix. 

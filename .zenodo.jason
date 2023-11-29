@@ -1,0 +1,30 @@
+{
+    "creators": [
+        {
+            "orcid": "0009-0006-9010-1500",
+            "affiliation": "University of illinois at Urbana Champaign",
+            "name": "Wen, Dongjing"
+        },
+    ],
+
+    "license": "Creative Commons Attribution Share Alike 4.0 International",
+
+    "title": "Reproduction of: Retiring Adult - New Datasets for Fair Machine Learning (IS477)",
+
+    "related_identifiers": [
+        {
+            "scheme": "url",
+            "identifier": "https://github.com/dwen2021/is477-fall2023/blob/main/README.md",
+            "relation": "cites",
+            "resource_type": "dataset"
+        }
+    ],
+
+    "keywords": ["Cats", "Laser", "Behavior"],
+
+    "communities": [
+        {"identifier": "software-cats"}
+    ],
+
+    "grants": [{"id":"777541"}]
+}
