@@ -9,7 +9,7 @@ Public repository for IS477 Fall 2023 final project
 
 
 ## Contributions
-112
+
 ## Analysis
 1. From the applying the train dataset, Logistic Regression showed the best accuracy score: 1. Therefore, Logistic Regression is selected for the final application for classification.
 2. Then, the selected model, Logistic Regression is fitted with test X and y for the final evaluation of the model. To evaluate the model with slightly more detailed, confusion matrix with metrics like accuracy, precision, and recall used. Logistic Regression showed all correct, 100% accuracy, precision, and recall with no negatives or error in confusion matrix. 
@@ -18,9 +18,16 @@ Public repository for IS477 Fall 2023 final project
 ## Workflow
 
 ## Reproducing
+- All the code in the program need the python environment of Python 3.11.1
+- Download the adult.zip from https://doi.org/10.24432/C5PC7J
+- Use Logistic Regression mofel to fit the data
+- Compare the results between different parameters
 
 ## License
-- Dataset: 
+- Creative Commons CCZero (CC0-1.0) for the license.
+- Characteristic: No Copyright, Global Applicability, Freedom to Use.
+- It is a very good license to my project, because it provides the neccessary part of it
+
 
 ## References
 - Aeberhard,Stefan and Forina,M.. (1991). Wine. UCI Machine Learning Repository. https://doi.org/10.24432/C5PC7J.
