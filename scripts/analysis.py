@@ -1,3 +1,4 @@
+## credit to CS 307 week 8, 9 note and lab 5, 6, 8
 # library import
 import numpy as np
 import pandas as pd
