@@ -1,0 +1,25 @@
+dataset shape: (178, 14), 178 instances, 13 features, 1 target 
+number of classes of wines:" 
+ class
+2    71
+1    59
+3    48
+Name: count, dtype: int64, "class 1: 59, class 2: 71, class 3: 48 
+ 
+random state=42 enabled for train and test split 
+accuracy score for logistic regression for train data: 0.9790640394088671 
+accuracy score for decision tree for train data: 0.9007389162561577 
+accuracy score for random forest for train data: 0.9785714285714286 
+selected classification model: logistic regression 
+ 
+logistic regression Confusion Matrix: 
+ [[14  0  0]
+ [ 0 14  0]
+ [ 0  0  8]] 
+logistic regression accuracy: 1.0 
+logistic regression precision score: 1.0 
+logistic regression recall score: 1.0 
+ 
+----- Final evaluation ----- 
+According to the accuracy score from the 'train' model of logistic regression, decision tree, and random forest model, logistic regression model performed best among the three models. Therefore, we choose logistic regression for the best model to use 
+Then, according to the accuracy score of 'test' model of logistic regression, the model performed 1.0 accuracy, precision, and recall. Therefore, the final evaluation of logistic regression model in the wine class classification dataset has 'perfect' performance, correctly label each of classes of quality of wine without any false labels.
