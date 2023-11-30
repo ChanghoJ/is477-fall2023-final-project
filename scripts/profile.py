@@ -1,4 +1,5 @@
 # import libraries for profiling
+import os
 import pandas as pd
 from ydata_profiling import ProfileReport
 
@@ -11,6 +12,10 @@ columns = [
     "0D280_0D315_of_diluted_wines", "Proline",
     ]
 wine_df = pd.read_csv("data/wine.data", names=columns)
+
+# make sure directory exist
+if not os.path.exists('profiling'):
+    os.makedirs('profiling', exist_ok=True)
 
 # dataset profiling
 profile = ProfileReport(wine_df, title="Profiling Report")

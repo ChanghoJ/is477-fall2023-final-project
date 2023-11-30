@@ -16,6 +16,8 @@ Public repository for IS477 Fall 2023 final project
 - **Result**: Logistic Regression showed the best performance to classifying wine quality class according to the analysis, compare to Decision Tree and Random Forest. However, since the dataset contains only 178 instances, considering this analysis as no more than performance purposes and may be further works needed for applying to the work place.
 
 ## Workflow
+![Workflow DAG graph created by dag.py.](results/graph_dag.png)
+- The overall workflow consist of 3 steps. Step 1 is preparing data, step 2 is profiling dataframe from the data from step 1, and step 3 is analyzing from the data from step 1.
 
 ## Reproducing
 - All the code in the program need the python environment of Python 3.11.1

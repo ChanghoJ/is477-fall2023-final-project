@@ -8,6 +8,10 @@ import os
 import hashlib
 import zipfile
 
+# make sure directory exist
+if not os.path.exists('data'):
+    os.makedirs('data', exist_ok=True)
+
 ##import zipfile
 
 # UCI Wine dataset

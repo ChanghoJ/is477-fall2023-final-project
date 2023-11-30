@@ -1,5 +1,6 @@
 ## credit to CS 307 week 8, 9 note and lab 5, 6, 8
 # library import
+import os
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
@@ -110,6 +111,10 @@ print("According to the accuracy score from the 'train' model of logistic regres
 print("Then, according to the accuracy score of 'test' model of logistic regression, the model performed 1.0 accuracy, precision, and recall. \
     Therefore, the final evaluation of logistic regression model in the wine class classification dataset has 'perfect' performance, \
         correctly label each of classes of quality of wine without any false labels.")
+
+# make sure directory exist
+if not os.path.exists('results'):
+    os.makedirs('results', exist_ok=True)
 
 with open('results/uci_wine_results.txt', 'w') as f:
     f.write(

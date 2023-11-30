@@ -1,23 +1,28 @@
+# prepare data
 rule step1:
   output:
-    "lab6/output1.txt",
-    "lab6/output2.txt"
+    "data/wine.zip",
+    "data/Index",
+    "data/wine.data",
+    "data/wine.names"
   shell:
-    "python lab6/step1.py"
+    "python scripts/prepare_data.py"
 
+# profile dataframe from data
 rule step2:
+  input:
+    "data/wine.data"
   output:
-    "lab6/output3.txt"
+    "profiling/report.html"
   shell:
-    "python lab6/step2.py"
+    "python scripts/profile.py"
 
+# analyze from given data from previous step
 rule step3:
   input:
-    "lab6/output1.txt",
-    "lab6/output2.txt",
-    "lab6/output3.txt"
+    "data/wine.data"
   output:
-    "lab6/output4.txt"
+    "results/uci_wine_results.txt"
   shell:
-    "python lab6/step3.py"
+    "python scripts/analysis.py"
 
