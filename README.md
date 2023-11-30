@@ -28,7 +28,7 @@ Public repository for IS477 Fall 2023 final project
 ## License
 - Creative Commons CCZero (CC0-1.0) for the license.
 - Characteristic: No Copyright, Global Applicability, Freedom to Use.
-- It is a very good license to my project, because it provides the neccessary part of it
+- It is a very good license to the project, because it provides the neccessary part of it
 
 
 ## References
