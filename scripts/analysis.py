@@ -6,7 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.preprocessing import StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import accuracy_score, confusion_matrix, recall_score, precision_score
@@ -19,15 +19,15 @@ columns = [
     "Proanthocyanins", "Color_intensity", "Hue",
     "0D280_0D315_of_diluted_wines", "Proline",
     ]
-wind_df = pd.read_csv("data/wine.data", names=columns)
+wine_df = pd.read_csv("data/wine.data", names=columns)
 
 # Split dataset into train and test dataset
-X = wind_df.drop("class", axis=1)
-y = wind_df['class'].astype("category")
+X = wine_df.drop("class", axis=1)
+y = wine_df['class'].astype("category")
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # dataset summary
-print("dataset shape:", wind_df.shape, ", 178 instances, 13 features, 1 target")
+print("dataset shape:", wine_df.shape, ", 178 instances, 13 features, 1 target")
 print("number of classes of wines:", "\n", y.value_counts(), "class 1: 59, class 2: 71, class 3: 48")
 
 # data transformation
@@ -113,7 +113,7 @@ print("Then, according to the accuracy score of 'test' model of logistic regress
 
 with open('results/uci_wine_results.txt', 'w') as f:
     f.write(
-        f'dataset shape: {wind_df.shape}, 178 instances, 13 features, 1 target \n'
+        f'dataset shape: {wine_df.shape}, 178 instances, 13 features, 1 target \n'
         f'number of classes of wines:" \n {y.value_counts()}, "class 1: 59, class 2: 71, class 3: 48 \n \n'
         'random state=42 enabled for train and test split \n'
         f'accuracy score for logistic regression for train data: {lr_best_score} \n'
