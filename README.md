@@ -20,10 +20,18 @@ Public repository for IS477 Fall 2023 final project
 - The overall workflow consist of 3 steps. Step 1 is preparing data, step 2 is profiling dataframe from the data from step 1, and step 3 is analyzing from the data from step 1.
 
 ## Reproducing
-- All the code in the program need the python environment of Python 3.11.1
-- Download the adult.zip from https://doi.org/10.24432/C5PC7J
-- Use Logistic Regression mofel to fit the data
-- Compare the results between different parameters
+- All the code in the program need the python environment of Python 3.11.~ (but Python 3.10 also works fine)
+- First, download or clone this repository from Github and unzip if your downloaded as zip file.
+- Then, reproduce methods can divided into two: Docker and environment.log
+
+### If you are using Docker
+- *change username to your docker username. If username is "**kiminfo04**", it will be: **docker run --rm -v ${PWD}:/is477 kiminfo04/is477-fall2023:final-project python scripts/prepare_data.py***
+- Type following command in order for run in Docker:
+1. For **acquiring** and check **integrity** of data: docker run --rm -v ${PWD}:/is477 username/is477-fall2023:final-project python scripts/prepare_data.py
+2. For **profiling data**: docker run --rm -v ${PWD}:/is477 username/is477-fall2023:final-project python scripts/reproduce_adult.py
+3. For **analyzing data**: docker run --rm -v ${PWD}:/is477 username/is477-fall2023:final-project python scripts/reproduce_reconstructed.py
+
+### If you are using enivornment.log
 
 ## License
 - Creative Commons CCZero (CC0-1.0) for the license.

@@ -1,4 +1,5 @@
 requests
+pandas
+ydata-profiling
+scikit-learn
 snakemake
-vscode-pdf
-Visual C++ Build Tools

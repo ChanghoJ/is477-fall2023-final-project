@@ -8,8 +8,8 @@ Name: count, dtype: int64, "class 1: 59, class 2: 71, class 3: 48
  
 random state=42 enabled for train and test split 
 accuracy score for logistic regression for train data: 0.9790640394088671 
-accuracy score for decision tree for train data: 0.9076354679802956 
-accuracy score for random forest for train data: 0.9857142857142858 
+accuracy score for decision tree for train data: 0.9078817733990148 
+accuracy score for random forest for train data: 0.9785714285714286 
 selected classification model: logistic regression 
  
 logistic regression Confusion Matrix: 

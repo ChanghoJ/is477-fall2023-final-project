@@ -1,7 +1,7 @@
 ## credit to CS 307 week 8, 9 note and lab 5, 6, 8
 # library import
 import os
-import numpy as np
+#import numpy as np
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
