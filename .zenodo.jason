@@ -1,46 +1,22 @@
 {
+    "title": "IS477-Fall23-Final-Project",
+    "description": "The project is about creating the pipeline or the entire process of data management, such as acquisition of data, check integrity of data, data analysis, preservation, legal concerns, and reproduce of data and analysis.",
     "creators": [
         {
             "orcid": "0009-0006-9010-1500",
             "affiliation": "University of illinois at Urbana Champaign",
             "name": "Wen, Dongjing"
         },
-    ],
-
-    "license": "Creative Commons Attribution Share Alike 4.0 International",
-
-    "title": "IS477-Fall23-Final-Project",
-
-    "related_identifiers": [
         {
-            "scheme": "url",
-            "identifier": "https://github.com/dwen2021/is477-fall2023/blob/main/README.md",
-            "relation": "cites",
-            "resource_type": "dataset"
+            "orcid": "0009-0008-2873-2752",
+            "affiliation": "University of illinois at Urbana Champaign",
+            "name": "Jung, Changho"
         }
     ],
 
-    "keywords": ["Cats", "Laser", "Behavior"],
-
-    "communities": [
-        {"identifier": "software-cats"}
-    ],
-
-    "grants": [{"id":"777541"}]
-}
-
-{
-    "creators": [
-        {
-            "orcid": "",
-            "affiliation": "University of illinois at Urbana Champaign",
-            "name": "Jung, Changho"
-        },
-    ],
-
-    "license": "Creative Commons Attribution Share Alike 4.0 International",
-
-    "title": "IS477-Fall23-Final-Project",
+    "access_right": "open",
+    "upload_type": "other",
+    "license": "CC-BY-SA-4.0",
 
     "related_identifiers": [
         {
