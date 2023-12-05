@@ -33,11 +33,20 @@ Public repository for IS477 Fall 2023 final project
 ### If you are using Docker
 - *change username to your docker username. If username is "**kiminfo04**", it will be: **docker run --rm -v ${PWD}:/is477 kiminfo04/is477-fall2023:final-project python scripts/prepare_data.py***
 - Type following command in order for run in Docker:
-1. For **acquiring** and check **integrity** of data: docker run --rm -v ${PWD}:/is477 username/is477-fall2023:final-project python scripts/prepare_data.py
-2. For **profiling data**: docker run --rm -v ${PWD}:/is477 username/is477-fall2023:final-project python scripts/reproduce_adult.py
-3. For **analyzing data**: docker run --rm -v ${PWD}:/is477 username/is477-fall2023:final-project python scripts/reproduce_reconstructed.py
+1. For **acquiring** and check **integrity** of data: docker run --rm -v ${PWD}:/is477 username/is477-fall2023-final-project:v1 python scripts/prepare_data.py
+2. For **profiling data**: docker run --rm -v ${PWD}:/is477 username/is477-fall2023-final-project:v1 python scripts/profile.py
+3. For **analyzing data**: docker run --rm -v ${PWD}:/is477 username/is477-fall2023-final-project:v1 python scripts/analysis.py
 
-### If you are using enivornment.log
+### If you not use Docker
+1. Clone this repository (is477-fall2023-final-project)
+
+2. Create a virtual environment (recommended), by install "pip3 install virtualenv", create by "python<version> -m venv <virtual-environment-name>", and activate "source .venv/bin/activate".
+
+3. Install the required Python dependencies: use this command on terminal, "pip install -r requirements.txt", and make sure check enviornmental.log
+
+4. Run the data preparation script in order: 1. **"scripts/prepare_data.py"** and unzip adult.zip in data file under is477-fall2023 directory, 2. **"scripts/profile.py"** or **"scripts/analysis.py"** at your choice. Running the scripts can be done on the terminal in root directory (for this git clone, is477-fall2023), like python prepare_data.py; python scripts/reproduce_adult.py; python scripts/reproduce_reconstructed.py.
+
+5. If downloading the UCI Wine dataset will complete after running "python scripts/prepare_data.py", you can run the "python scripts/profile.py" for data profiling and "python scripts/analysis.py" to commence the calssification process. This will add accuracy score results from classfication task of scripts/analysis.py based on dataset from scripts/prepare_data.py, and the result will recorded as txt files in result repository. scripts/profile.py will add data profiling html file on the profiling directory.
 
 ## License
 - Creative Commons CCZero (CC0-1.0) for the license.
