@@ -12,7 +12,7 @@ Public repository for IS477 Fall 2023 final project
 
 ## Contributions
 
-- Jung, Changho: Creating and finishing the files in data folder, results folder and script folder. Checking and revsing the rest of the files in the project.
+- Jung, Changho: Creating and finishing the files in data folder, results folder and script folder. Checking and revising the rest of the files in the project.
 
 - Wen, Dongjing : Creating and finishing the README.md, requirement.txt, snakefile, environment.log, .gitgnore, zenodo.jason, profiling files. CO-finishing the data folder. Checking and revising the files in results folder and script folder.
 
@@ -23,7 +23,7 @@ Public repository for IS477 Fall 2023 final project
 
 ## Workflow
 ![Workflow DAG graph created by dag.py.](results/graph_dag.png)
-- The overall workflow consist of 3 steps. Step 1 is preparing data, step 2 is profiling dataframe from the data from step 1, and step 3 is analyzing from the data from step 1.
+- The overall workflow consist of 3 steps. Prepare is preparing data, Profile is profiling dataframe from the data from Prepare, and Analyze is analyzing from the data from Prepare.
 
 ## Reproducing
 - All the code in the program need the python environment of Python 3.11.~ (but Python 3.10 also works fine)

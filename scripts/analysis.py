@@ -90,11 +90,7 @@ print("Best CV accuracy score for random forest: ", rf_best_score)
 
 
 # --------------------------------------------------------------------------
-# we choose logistic regression since it has the highest score
-lr_grid.fit(X_test, y_test)
-print("Best hyperparameters for logistic regression: ", lr_grid.best_params_)
-print("Best CV accuracy score for logistic regression: ", lr_grid.best_score_)
-
+# we choose logistic regression since it has the highest score. We are not fitting at test data but just predict for final evaluation.
 # test confusion matrix, accuracy and recall
 lr_pred = lr_grid.predict(X_test)
 lr_confusion = confusion_matrix(y_test, lr_pred)

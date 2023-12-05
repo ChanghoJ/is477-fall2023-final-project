@@ -1,5 +1,5 @@
 # prepare data
-rule step1:
+rule prepare:
   output:
     "data/wine.zip",
     "data/Index",
@@ -9,7 +9,7 @@ rule step1:
     "python scripts/prepare_data.py"
 
 # profile dataframe from data
-rule step2:
+rule profile:
   input:
     "data/wine.data"
   output:
@@ -18,7 +18,7 @@ rule step2:
     "python scripts/profile.py"
 
 # analyze from given data from previous step
-rule step3:
+rule analyze:
   input:
     "data/wine.data"
   output:
