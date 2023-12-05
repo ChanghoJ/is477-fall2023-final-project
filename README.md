@@ -32,6 +32,8 @@ Public repository for IS477 Fall 2023 final project
 
 ### If you are using Docker
 - *change username to your docker username. If username is "**kiminfo04**", it will be: **docker run --rm -v ${PWD}:/is477 kiminfo04/is477-fall2023:final-project python scripts/prepare_data.py***
+- Docker repository URL: https://hub.docker.com/repository/docker/chjung2/is477-fall2023-final-project/tags?page=1&ordering=last_updated
+- You can pull the repository by using: docker pull chjung2/is477-fall2023-final-project:v1
 - Type following command in order for run in Docker:
 1. For **acquiring** and check **integrity** of data: docker run --rm -v ${PWD}:/is477 username/is477-fall2023-final-project:v1 python scripts/prepare_data.py
 2. For **profiling data**: docker run --rm -v ${PWD}:/is477 username/is477-fall2023-final-project:v1 python scripts/profile.py
