@@ -1,5 +1,7 @@
 # is477-fall2023-final-project
+
 Public repository for IS477 Fall 2023 final project
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10263411.svg)](https://doi.org/10.5281/zenodo.10263411)
 
 ## Overview
 - **Purpose**: is477-fall2023-final-project is Github repository for the final project of IS 477 Data Management class. The project is about creating the pipeline or the entire process of data management, such as acquisition of data, check integrity of data, data analysis, preservation, legal concerns, and reproduce of data and analysis. 
@@ -9,6 +11,10 @@ Public repository for IS477 Fall 2023 final project
 
 
 ## Contributions
+
+- Jung, Changho: Creating and finishing the files in data folder, results folder and script folder. Checking and revsing the rest of the files in the project.
+
+- Wen, Dongjing : Creating and finishing the README.md, requirement.txt, snakefile, environment.log, .gitgnore, zenodo.jason, profiling files. CO-finishing the data folder. Checking and revising the files in results folder and script folder.
 
 ## Analysis
 1. From the applying the train dataset, Logistic Regression showed the best accuracy score: 1. Therefore, Logistic Regression is selected for the final application for classification.
