@@ -20,14 +20,20 @@
 
     "related_identifiers": [
         {
-            "scheme": "url",
-            "identifier": "https://github.com/ChanghoJ/is477-fall2023-final-project",
+            "scheme": "doi",
+            "identifier": "https://doi.org/10.24432/C5PC7J",
             "relation": "cites",
             "resource_type": "dataset"
+        },
+        {
+            "scheme": "url",
+            "identifier": "https://github.com/ChanghoJ/is477-fall2023-final-project",
+            "relation": "isSupplementTo",
+            "resource_type": "software"
         }
     ],
 
-    "keywords": ["Cats", "Laser", "Behavior"],
+    "keywords": ["Wine", "Classification", "Data Management"],
 
     "communities": [
         {"identifier": "software-cats"}
