@@ -14,7 +14,7 @@ Public repository for IS477 Fall 2023 final project
 
 - Jung, Changho: Creating and finishing the files in data folder, results folder and script folder. Checking and revising the rest of the files in the project.
 
-- Wen, Dongjing: Creating and finishing the README.md, requirement.txt, snakefile, environment.log, .gitgnore, zenodo.jason, profiling files. CO-finishing the data folder. Checking and revising the files in results folder and script folder.
+- Wen, Dongjing: CO-finishing the script folder and data folder.Creating and finishing the README.md, requirement.txt, snakefile, environment.log, .gitgnore, zenodo.jason, profiling files. Checking and revising the files in results folder.
 
 ## Analysis
 1. From the applying the train dataset, Logistic Regression showed the best accuracy score: 1. Therefore, Logistic Regression is selected for the final application for classification.
